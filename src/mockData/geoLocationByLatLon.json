@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "Key": "134742",
+  "Type": "City",
+  "Rank": 85,
+  "LocalizedName": "Tampere",
+  "EnglishName": "Tampere",
+  "PrimaryPostalCode": "",
+  "Region": {
+    "ID": "EUR",
+    "LocalizedName": "Europe",
+    "EnglishName": "Europe"
+  },
+  "Country": {
+    "ID": "FI",
+    "LocalizedName": "Finland",
+    "EnglishName": "Finland"
+  },
+  "AdministrativeArea": {
+    "ID": "11",
+    "LocalizedName": "Pirkanmaa",
+    "EnglishName": "Pirkanmaa",
+    "Level": 1,
+    "LocalizedType": "Region",
+    "EnglishType": "Region",
+    "CountryID": "FI"
+  },
+  "TimeZone": {
+    "Code": "EET",
+    "Name": "Europe/Helsinki",
+    "GmtOffset": 2,
+    "IsDaylightSaving": false,
+    "NextOffsetChange": "2023-03-26T01:00:00Z"
+  },
+  "GeoPosition": {
+    "Latitude": 61.312,
+    "Longitude": 23.618,
+    "Elevation": {
+      "Metric": {
+        "Value": 69,
+        "Unit": "m",
+        "UnitType": 5
+      },
+      "Imperial": {
+        "Value": 226,
+        "Unit": "ft",
+        "UnitType": 0
+      }
+    }
+  },
+  "IsAlias": false,
+  "SupplementalAdminAreas": [
+    {
+      "Level": 2,
+      "LocalizedName": "Tampereen",
+      "EnglishName": "Tampereen"
+    }
+  ],
+  "DataSets": [
+    "AirQualityCurrentConditions",
+    "AirQualityForecasts",
+    "Alerts",
+    "DailyPollenForecast",
+    "ForecastConfidence",
+    "FutureRadar",
+    "MinuteCast",
+    "Radar"
+  ],
+  "Details": {
+    "Key": "134742",
+    "StationCode": "EFTP",
+    "StationGmtOffset": 2,
+    "BandMap": "FI",
+    "Climo": "EFTP",
+    "LocalRadar": "",
+    "MediaRegion": null,
+    "Metar": "EFTP",
+    "NXMetro": "",
+    "NXState": "EURM",
+    "Population": 3481,
+    "PrimaryWarningCountyCode": "",
+    "PrimaryWarningZoneCode": "",
+    "Satellite": "EURM",
+    "Synoptic": "02944",
+    "MarineStation": "",
+    "MarineStationGMTOffset": null,
+    "VideoCode": "",
+    "LocationStem": "fi/vesilahti/134742",
+    "PartnerID": null,
+    "Sources": [
+      {
+        "DataType": "AirQualityCurrentConditions",
+        "Source": "Plume Labs",
+        "SourceId": 63
+      },
+      {
+        "DataType": "AirQualityForecasts",
+        "Source": "Plume Labs",
+        "SourceId": 63
+      },
+      {
+        "DataType": "Alerts",
+        "Source": "Finnish Meteorological Institute",
+        "SourceId": 19
+      },
+      {
+        "DataType": "CurrentConditions",
+        "Source": "AccuWeather",
+        "SourceId": 1
+      },
+      {
+        "DataType": "DailyForecast",
+        "Source": "AccuWeather",
+        "SourceId": 1
+      },
+      {
+        "DataType": "DailyPollenForecast",
+        "Source": "Copernicus Atmosphere Monitoring Service",
+        "SourceId": 78
+      },
+      {
+        "DataType": "ForecastConfidence",
+        "Source": "AccuWeather",
+        "SourceId": 1
+      },
+      {
+        "DataType": "FutureRadar",
+        "Source": "AccuWeather",
+        "SourceId": 1
+      },
+      {
+        "DataType": "Historical",
+        "Source": "AccuWeather",
+        "SourceId": 1
+      },
+      {
+        "DataType": "HourlyForecast",
+        "Source": "AccuWeather",
+        "SourceId": 1
+      },
+      {
+        "DataType": "MinuteCast",
+        "Source": "AccuWeather",
+        "SourceId": 1
+      },
+      {
+        "DataType": "Radar",
+        "Source": "Finnish Meteorological Institute",
+        "SourceId": 19
+      }
+    ],
+    "CanonicalPostalCode": "",
+    "CanonicalLocationKey": "134742"
+  }
+}

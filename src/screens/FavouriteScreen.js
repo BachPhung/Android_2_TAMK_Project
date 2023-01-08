@@ -1,11 +1,9 @@
 import { ImageBackground, View } from "react-native";
 import { useEffect } from "react";
-import { useToast } from "react-native-toast-notifications";
 import { useStateValue } from "../context";
 import {
   cityFailure,
   cityFetchSuccess,
-  citySetLatLon,
   citySetLocationKey,
   citySetName,
 } from "../context/actions/CityAction";
@@ -31,7 +29,6 @@ export default function FavouriteScreen({ route }) {
   const { locationKey } = city;
 
   useEffect(() => {
-    console.log("props: ", route.params.cityProps);
     (async () => {
       try {
         const cityData = await fetchLocationKeyByCityName(
@@ -45,12 +42,8 @@ export default function FavouriteScreen({ route }) {
         dispatch(cityFailure());
       }
     })();
-  }, []);
-  useEffect(() => {
-    console.log("Fav");
-    console.log("Name: ", city.name);
-    console.log("Key: ", city.locationKey);
-  }, [city.name, city.locationKey]);
+  }, [route]);
+  useEffect(() => {}, [city.locationKey]);
   useEffect(() => {
     (async () => {
       try {
@@ -64,11 +57,10 @@ export default function FavouriteScreen({ route }) {
         dispatch(weatherHourlyFetchSuccess(data[1]));
         dispatch(weatherDailyFetchSuccess(data[2].DailyForecasts));
       } catch (err) {
-        console.log(err);
         dispatch(weatherFetchFailure());
       }
     })();
-  }, [city.name, city.locationKey]);
+  }, [city.locationKey]);
 
   return (
     <ImageBackground

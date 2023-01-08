@@ -44,6 +44,7 @@ export default function WeatherScreen() {
           toast.show("Fetching data", { type: "normal" });
         }
         const location = await Location.getCurrentPositionAsync({});
+        console.log("location.coords: ", location.coords);
         dispatch(citySetLatLon(location.coords));
       } catch (err) {
         console.log(err);
@@ -82,7 +83,7 @@ export default function WeatherScreen() {
         dispatch(weatherFetchFailure());
       }
     })();
-  }, [city.name]);
+  }, [city.name, city.locationKey]);
 
   return (
     <ImageBackground
